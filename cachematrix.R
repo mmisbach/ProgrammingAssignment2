@@ -38,7 +38,7 @@ cacheSolve <- function(x, ...) {
     return(inv)
   }
   mx<-x$get_working_matrix()
-  inv<-solve(mx)
+  inv<-solve(mx, ...)
   x$set_inv(inv)
   inv
 }
